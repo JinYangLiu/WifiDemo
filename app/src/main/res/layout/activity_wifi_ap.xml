@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WifiApActivity">
+    <EditText
+        android:id="@+id/edit_name"
+        android:hint="请输入热点名称"
+        style="@style/btn_style"
+         />
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:hint="请输入热点密码"
+        style="@style/btn_style"
+        />
+    <EditText
+        android:id="@+id/edit_type"
+        android:hint="请输入热点密码类型"
+        style="@style/btn_style"
+        />
+    <Button
+        android:id="@+id/btn_wifi_ap_open"
+        style="@style/btn_style"
+        android:onClick="onApBtnClick"
+        android:text="开启WIFI热点" />
+    <Button
+        android:id="@+id/btn_wifi_ap_close"
+        style="@style/btn_style"
+        android:onClick="onApBtnClick"
+        android:text="关闭WIFI热点" />
+
+</LinearLayout>
